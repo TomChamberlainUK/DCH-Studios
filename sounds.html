@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>DCH | Studios</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/breakpoint-1.css" media="screen and (min-width : 30em)" />
+		<link rel="stylesheet" href="css/breakpoint-2.css" media="screen and (min-width : 40em)" />
+		<link rel="stylesheet" href="css/breakpoint-3.css" media="screen and (min-width : 50em)" />
+		<link rel="stylesheet" href="css/breakpoint-4.css" media="screen and (min-width : 60em)" />
+		<link rel="stylesheet" href="css/breakpoint-5.css" media="screen and (min-width : 82em)" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+	
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+	
+				$(window).resize(function(){
+					var w = $(window).width();
+					if(w > 320 && menu.is(':hidden')) {
+						menu.removeAttr('style');
+					}
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="pagewrap">
+			<div id="header">
+				<div id="header-image">
+					<img id="backdrop" src="images/header.png" alt="header">
+				</div>
+				<div id="page-title">
+					<img id="title" src="images/dchtitle.png" alt="DCH Studios">
+				</div>
+				<div id="navigation">
+					<nav>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li class="selected"><a href="sounds.html">Sounds</a></li>
+							<li><a href="equipment.html">Equipment</a></li>
+							<li><a href="services.html">Services</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+						<a href="#" id="pull">Menu</a>
+					</nav>
+				</div>
+				<div id="header-break">
+				</div>
+			</div>
+			<div id="content">
+				<div class="body-content">
+					<h1 class="body-content">Most Popular</h1>
+				<section class="grid-wrap">
+					<article class="grid-col bp1-col-full bp2-col-one-half bp4-col-one-quarter"><a href="https://soundcloud.com/dchstudios/armed-for-a-crisis-the">
+						<img class="thumbnail" src="images/armedforacrisis.png" alt="Armed For a Crisis">
+						<h2 class="col-head">Armed For a Crisis</h2>
+						<p>Armed For a Crisis - The Cartographer</p></a>
+					</article>
+					<article class="grid-col bp1-col-full bp2-col-one-half bp4-col-one-quarter"><a href="https://soundcloud.com/dchstudios/a-fall-from-hope-master">
+						<img class="thumbnail" src="images/afallfromhope.png" alt="A Fall From Hope">
+						<h2 class="col-head">A Fall From Hope</h2>
+						<p>A Fall From Hope - Leaving Present</p></a>
+					</article>
+					<article class="grid-col bp1-col-full bp2-col-one-half bp4-col-one-quarter"><a href="https://soundcloud.com/dchstudios/sink-the-city-the-mentalist-ft">
+						<img class="thumbnail" src="images/sinkthecity.png" alt="Sink The City">
+						<h2 class="col-head">Sink The City</h2>
+						<p>Sink The City - The Mentalist (Feat. Ryan Kirby from Fit For A King</p></a>
+					</article>
+					<article class="grid-col bp1-col-full bp2-col-one-half bp4-col-one-quarter"><a href="https://soundcloud.com/dchstudios/set-in-the-skies-we-the-martyr">
+						<img class="thumbnail" src="images/setintheskies.png" alt="Set in the Skies">
+						<h2 class="col-head">Set In The Skies</h2>
+						<p>Set In The Skies - We, The Martyr</p></a>
+					</article>
+				</section>
+				</div>
+				<div class="page-break">
+				</div>
+				<div class="body-content">
+					<h1 class="body-content">Latest</h1>
+				<section class="grid-wrap">
+					<article class="grid-col bp1-col-full bp2-col-one-half bp4-col-one-quarter"><a href="https://soundcloud.com/dchstudios/sink-the-city-the-mentalist-ft">
+						<img class="thumbnail" src="images/sinkthecity.png" alt="Sink the City">
+						<h2 class="col-head">Sink The City</h2>
+						<p>Sink The City - The Mentalist (Feat. Ryan Kirby from Fit For A King</p></a>
+					</article>
+					<article class="grid-col bp1-col-full bp2-col-one-half bp4-col-one-quarter"><a href="https://soundcloud.com/dchstudios/im-a-model-baby-never-learn">
+						<img class="thumbnail" src="images/imamodelbaby.png" alt="I'm a Model Baby">
+						<h2 class="col-head">I'm a Model Baby</h2>
+						<p>I'm a Model Baby - Never Learn</p></a>
+					</article>
+					<article class="grid-col bp1-col-full bp2-col-one-half bp4-col-one-quarter"><a href="https://soundcloud.com/dchstudios/ten-tides-december">
+						<img class="thumbnail" src="images/tentides.png" alt="Ten Tides">
+						<h2 class="col-head">Ten Tides</h2>
+						<p>Ten Tides - December</p></a>
+					</article>
+					<article class="grid-col bp1-col-full bp2-col-one-half bp4-col-one-quarter"><a href="https://soundcloud.com/dchstudios/captives-riff-song">
+						<img class="thumbnail" src="images/captives.png" alt="Captives">
+						<h2 class="col-head">Captives</h2>
+						<p>Captives - Riff Song</p></a>
+					</article>
+				</section>
+				<section class="grid-wrap">
+					<article class="grid-col bp1-col-full bp2-col-one-half bp4-col-one-quarter"><a href="https://soundcloud.com/dchstudios/armed-for-a-crisis-the">
+						<img class="thumbnail" src="images/armedforacrisis.png" alt="Armed For a Crisis">
+						<h2 class="col-head">Armed For a Crisis</h2>
+						<p>Armed For a Crisis - The Cartographer</p></a>
+					</article>
+					<article class="grid-col bp1-col-full bp2-col-one-half bp4-col-one-quarter"><a href="https://soundcloud.com/dchstudios/set-in-the-skies-we-the-martyr">
+						<img class="thumbnail" src="images/setintheskies.png" alt="Set in the Skies">
+						<h2 class="col-head">Set In The Skies</h2>
+						<p>Set In The Skies - We, The Martyr</p></a>
+					</article>
+					<article class="grid-col bp1-col-full bp2-col-one-half bp4-col-one-quarter"><a href="https://soundcloud.com/dchstudios/disturbing-the-depths">
+						<img class="thumbnail" src="images/disturbingthedepths.png" alt="Disturbing Depths">
+						<h2 class="col-head">Disturbing The Depths</h2>
+						<p>Disturbing The Depths - Hyperspace</p></a>
+					</article>
+					<article class="grid-col bp1-col-full bp2-col-one-half bp4-col-one-quarter"><a href="https://soundcloud.com/dchstudios/a-fall-from-hope-song-2">
+						<img class="thumbnail" src="images/afallfromhope.png" alt="A Fall From Hope">
+						<h2 class="col-head">A Fall From Hope</h2>
+						<p>A Fall From Hope - Diverge</p></a>
+					</article>
+				</section>			
+			</div>
+			<div id="footer">
+				<div class="page-break"></div>
+				<p><a href="http://www.facebook.com/DCHStudios">Facebook</a> | <a href="http://soundcloud.com/dchstudios">Soundcloud</a> | DCH Studios</p>
+			</div>
+			</div>
+		</div>
+	</body>
+</html>

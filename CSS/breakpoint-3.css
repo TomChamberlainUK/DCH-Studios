@@ -1,0 +1,15 @@
+.bp3-col-full 			{ width: 100%; }
+.bp3-col-one-half 		{ width: 50%; }
+.bp3-col-one-third 		{ width: 33.333%; }
+.bp3-col-two-thirds 	{ width: 66.666%; }
+.bp3-col-one-quarter 	{ width: 25%; }
+.bp3-col-three-quarters { width: 75%; }
+.bp3-col-one-fifth           { width: 20%; }
+
+.lt-ie8 .bp3-col-full 			{ width: 99.95%; }
+.lt-ie8 .bp3-col-one-half 		{ width: 47.45%; }
+.lt-ie8 .bp3-col-one-third 		{ width: 29.55%; }
+.lt-ie8 .bp3-col-two-thirds 	{ width: 64.95%; }
+.lt-ie8 .bp3-col-one-quarter 	{ width: 19.95%; }
+.lt-ie8 .bp3-col-three-quarters { width: 74.95%; }
+

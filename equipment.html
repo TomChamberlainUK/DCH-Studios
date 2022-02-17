@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>DCH | Studios</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/breakpoint-1.css" media="screen and (min-width : 30em)" />
+		<link rel="stylesheet" href="css/breakpoint-2.css" media="screen and (min-width : 40em)" />
+		<link rel="stylesheet" href="css/breakpoint-3.css" media="screen and (min-width : 50em)" />
+		<link rel="stylesheet" href="css/breakpoint-4.css" media="screen and (min-width : 60em)" />
+		<link rel="stylesheet" href="css/breakpoint-5.css" media="screen and (min-width : 82em)" />
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js"></script>
+		<script>
+			$(function() {  
+				$("#accordion").accordion({
+					heightStyle: "content"
+				}); 
+			});
+		</script>
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+	
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+	
+				$(window).resize(function(){
+					var w = $(window).width();
+					if(w > 320 && menu.is(':hidden')) {
+						menu.removeAttr('style');
+					}
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="pagewrap">
+			<div id="header">
+				<div id="header-image">
+					<img id="backdrop" src="images/header.png" alt="header">
+				</div>
+				<div id="page-title">
+					<img id="title" src="images/dchtitle.png" alt="DCH Studios">
+				</div>
+				<div id="navigation">
+					<nav>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="sounds.html">Sounds</a></li>
+							<li class="selected"><a href="equipment.html">Equipment</a></li>
+							<li><a href="services.html">Services</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+						<a href="#" id="pull">Menu</a>
+					</nav>
+				</div>
+				<div id="header-break">
+				</div>
+			</div>
+			<div id="content">
+				<div class="body-content">
+					<h1 class="body-content">Equipment</h1>
+					<p>DCH Studios isn't a large studio with huge mixing desks, automated faders and millions of tiny flashy lights, nor do we feel the need to be. Using 2 M-Audio Profire 2626s with 16 award winning Octane preamps connected to a powerful self built computer, an array of industry standard microphones and all the magical tools of Pro Tools and Cubase, we strive to achieve the highest possible quality. If you are interested in all the tiny details then here is a full list of all the equipment, including guitar amps and microphones:</p>
+					<div id="accordion">
+						<h3 class="accordion-header"><a href="#">DAW</a></h3>
+						<div>
+							<h3 class="accordion-sub-header">Cubase 5</h3>
+							<h3 class="accordion-sub-header">Protools 10</h3>
+						</div>
+						<h3 class="accordion-header"><a href="#">Audio Interface</a></h3>
+						<div>
+							<h3 class="accordion-sub-header">M-Audio Profire 2626 (x2)</h3>
+						</div>
+						<h3 class="accordion-header"><a href="#">Guitar Amps</a></h3>
+						<div>
+							<h3 class="accordion-sub-header">Mesa Boogie Road King</h3>
+							<h3 class="accordion-sub-header">Orange ppc412</h3>
+							<h3 class="accordion-sub-header">Peavey ValveKing 412</h3>
+							<h3 class="accordion-sub-header">Various amp simulators</h3>
+						</div>
+						<h3 class="accordion-header"><a href="#">Drums</a></h3>
+						<div>
+							<h3 class="accordion-sub-header">Tama Rockstar 5 piece Drum Kit</h3>
+						</div>
+						<h3 class="accordion-header"><a href="#">Microphones</a></h3>
+						<div>
+							<h3 class="accordion-sub-header">AKG D112</h3>
+							<h3 class="accordion-sub-header">AKG D40</h3>
+							<h3 class="accordion-sub-header">AKG C430</h3>
+							<h3 class="accordion-sub-header">Audix i5</h3>
+							<h3 class="accordion-sub-header">Rode NT1-A</h3>
+							<h3 class="accordion-sub-header">sE Electronics 1000a</h3>
+							<h3 class="accordion-sub-header">sE Electronics R1</h3>
+							<h3 class="accordion-sub-header">sE Electronics Titan</h3>
+							<h3 class="accordion-sub-header">Shure SM58</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="footer">
+				<div class="page-break"></div>
+				<p><a href="http://www.facebook.com/DCHStudios">Facebook</a> | <a href="http://soundcloud.com/dchstudios">Soundcloud</a> | DCH Studios</p>
+			</div>
+		</div>
+	</body>
+</html>

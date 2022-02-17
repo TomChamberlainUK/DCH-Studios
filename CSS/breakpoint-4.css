@@ -1,0 +1,65 @@
+.bp4-col-full 			{ width: 100%; }
+.bp4-col-one-half 		{ width: 50%; }
+.bp4-col-one-third 		{ width: 33.333%; }
+.bp4-col-two-thirds 	{ width: 66.666%; }
+.bp4-col-one-quarter 	{ width: 25%; }
+.bp4-col-three-quarters { width: 75%; }
+.bp4-col-one-fifth           { width: 20%; }
+
+.lt-ie8 .bp4-col-full 			{ width: 99.95%; }
+.lt-ie8 .bp4-col-one-half 		{ width: 47.45%; }
+.lt-ie8 .bp4-col-one-third 		{ width: 29.55%; }
+.lt-ie8 .bp4-col-two-thirds 	{ width: 64.95%; }
+.lt-ie8 .bp4-col-one-quarter 	{ width: 19.95%; }
+.lt-ie8 .bp4-col-three-quarters { width: 74.95%; }
+
+/*--- Header ---*/
+
+#header{
+	height:248px;
+	position: relative;
+}
+
+#page-title{
+	width:100%;
+	max-width:100%;
+	height:auto;
+	position:absolute;
+	top:51px;
+}
+
+#title{
+	width:60em;
+	height:auto;
+}
+
+#header-break{
+	height:40px;
+	background: rgb(107,0,0);
+}
+
+/*--- Navigation ---*/
+
+nav{
+	height:auto;
+	background: rgb(30,30,30);
+	background: rgba(30,30,30,0.8);
+}
+
+nav ul{
+	width:60em;
+	display:block;
+	height:auto;
+}
+
+nav li{
+	width:20%;
+	float:left;
+	position:relative;
+}
+
+/*--- Containers ---*/
+
+.grid-col{
+	height:10em;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>DCH | Studios</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/breakpoint-1.css" media="screen and (min-width : 30em)" />
+		<link rel="stylesheet" href="css/breakpoint-2.css" media="screen and (min-width : 40em)" />
+		<link rel="stylesheet" href="css/breakpoint-3.css" media="screen and (min-width : 50em)" />
+		<link rel="stylesheet" href="css/breakpoint-4.css" media="screen and (min-width : 60em)" />
+		<link rel="stylesheet" href="css/breakpoint-5.css" media="screen and (min-width : 82em)" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+	
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+	
+				$(window).resize(function(){
+					var w = $(window).width();
+					if(w > 320 && menu.is(':hidden')) {
+						menu.removeAttr('style');
+					}
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="pagewrap">
+			<div id="header">
+				<div id="header-image">
+					<img id="backdrop" src="images/header.png" alt="header">
+				</div>
+				<div id="page-title">
+					<img id="title" src="images/dchtitle.png" alt="DCH Studios">
+				</div>
+				<div id="navigation">
+					<nav>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="sounds.html">Sounds</a></li>
+							<li><a href="equipment.html">Equipment</a></li>
+							<li><a href="services.html">Services</a></li>
+							<li class="selected"><a href="contact.html">Contact</a></li>
+						</ul>
+						<a href="#" id="pull">Menu</a>
+					</nav>
+				</div>
+				<div id="header-break">
+				</div>
+			</div>
+			<div id="content">
+				<div class="body-content">
+					<h1 class="body-content">Contact</h1>
+					<p>Don't forget to check out and follow our Soundcloud for all our latest productions. If you have any questions then please do not hesitate to contact us at either our facebook page or email address listed below:</p>
+					<br>
+					<p class="indent"><a href="mailto:dchstudios@live.com">dchstudios@live.com</a></p>
+					<p class="indent"><a href="http://www.facebook.com/DCHStudios">Facebook</a></p>
+					<p class="indent"><a href="http://soundcloud.com/dchstudios">Soundcloud</a></p>
+				</div>
+			</div>
+			<div id="footer">
+				<div class="page-break"></div>
+				<p><a href="http://www.facebook.com/DCHStudios">Facebook</a> | <a href="http://soundcloud.com/dchstudios">Soundcloud</a> | DCH Studios</p>
+			</div>
+		</div>
+	</body>
+</html>
